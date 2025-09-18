@@ -1,0 +1,8 @@
+print("Program starting.\n")
+Color = input("Insert a hex color: ")
+Color = Color.lstrip("#")
+print("\nColors")
+print(f"- Red {Color[0:2]}")
+print(f"- Green {Color[2:4]}")
+print(f"- Blue {Color[4:6]}\n")
+print("Program ending.")

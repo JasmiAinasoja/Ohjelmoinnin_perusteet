@@ -1,3 +1,16 @@
-print("Program starting. \n")
+print("Program starting.\n")
+
 Word = input("Insert a closed compound word: ")
-print(f"The word you inserted is '{Word}' and in reverse it is '")
+print(f"The word you inserted is '{Word}' and in reverse it is '{Word[::-1]}'.")
+print(f"The inserted word length is {len(Word)}")
+print(f"Last character is '{Word[-1]}'\n")
+
+print("Take substring from the inserted word by inserting...")
+Start = int(input("1) Starting point: "))
+End = int(input("2) Ending point: "))
+Step = int(input("3) Step size: "))
+
+substring = Word[Start:End:Step]
+print(f"\nThe word '{Word}' sliced to the defined substring is '{substring}'.")
+
+print("Program ending.")
