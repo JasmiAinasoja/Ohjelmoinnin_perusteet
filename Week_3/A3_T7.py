@@ -24,12 +24,12 @@ if choice == 1:
 elif choice == 2:
     print("Using multiple independent if-statements structure.")
     if integer >= 400:
-        result = integer + 44 + 22 + 11
+        result = integer + 44
         print(f"Result is {result}")
-    elif integer >= 200:
-        result = integer + 22 + 11
+    if integer >= 200:
+        result = integer + 22
         print(f"Result is {result}")
-    elif integer >= 100:
+    if integer >= 100:
         result = integer + 11
         print(f"Result is {result}")
 
