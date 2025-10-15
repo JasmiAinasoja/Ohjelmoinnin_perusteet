@@ -9,11 +9,11 @@ while num >= 10:
         tulo = 1
         kaava = ""
         
-        for i, d in range(len(luvut)):
-            tulo *= d
-            kaava += str(d)
-            if i < len(luvut) - 1:
-                kaava += " * "
+        for i, d in enumerate(luvut):
+                tulo *= d
+                kaava += str(d)
+                if i < len(luvut) - 1:
+                        kaava += " * "
         
         print(f"{kaava} = {tulo}")
         num = tulo
